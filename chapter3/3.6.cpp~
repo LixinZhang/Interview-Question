@@ -1,0 +1,31 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+void stack_sort(int arr[], int length){
+    stack<int> a, b;
+    for(int i=0;i<length;i++){
+        a.push(arr[i]);
+    }
+    while(!a.empty()){
+        int temp = a.top();
+        a.pop();
+        if (!b.empty() && b.top()>temp){
+            while(!b.empty()){
+                a.push(b.top());
+                b.pop();
+            }
+        }
+        b.push(temp);
+    }
+    while(!b.empty()) {
+        cout<<b.top()<<endl;
+        b.pop();
+    }
+}
+int main(){
+    int arr [] = {2,1,3,0,8,1,6,9,7};
+    int len = sizeof(arr) / sizeof(int);
+    stack_sort(arr,len);
+    return 0;
+}
