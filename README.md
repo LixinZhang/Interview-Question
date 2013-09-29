@@ -1,4 +1,3 @@
-crackCode
+Interview Questions and Solutions
 =========
-
-Problems and solutions in CrackCode interview Book
+To record the Questions I had met or will meet during passed or future interviews, I will list the questions content and corresponding solutions here.
