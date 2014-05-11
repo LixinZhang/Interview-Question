@@ -47,8 +47,7 @@ class Solution {
             }
             return pHead;
        }
-}
-;
+};
 
 int main() {
     ListNode * node1 = new ListNode(1);
